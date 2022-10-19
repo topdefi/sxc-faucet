@@ -1,0 +1,21 @@
+{
+  "name": "sxc-faucet",
+  "repository": "https://github.com/topdefi/sxc-faucet",
+  "env": {
+    "WEB3_PROVIDER": {
+      "description": "JSON-RPC endpoint uri to an Ethereum node",
+      "value": "https://testnet.secrypt.tech"
+    },
+    "PRIVATE_KEY": {
+      "description": "Private key hex string of the funding account"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/go"
+    }
+  ]
+}
